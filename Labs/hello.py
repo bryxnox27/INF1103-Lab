@@ -12,3 +12,6 @@ print("====================")
 print("Username:", username)
 print("Age:", age)
 print("Category:", category)
+
+if age < 18:
+    print("Note: You are under 18, please follow the community guidelines.")
