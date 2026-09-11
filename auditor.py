@@ -1,28 +1,23 @@
 inventory = 0
-failed_entries = 0
 
 while True:
-	entry = input("Enter stock quantity (or type quit): ").strip()
+	entry = input("Enter stock quantity (or type 'quit'): ").strip()
 
 	if entry.lower() == "quit":
+		print(f"Total inventory: {inventory}")
 		break
-
-	if entry.startswith("-"):
-		print("Error: negative stock quantities are not allowed.")
-		failed_entries += 1
-		continue
 
 	if not entry.isdigit():
-		print("Error: enter a whole number.")
-		failed_entries += 1
+		print("Error: please enter a non-negative whole number.")
 		continue
 
-	inventory += int(entry)
+	quantity = int(entry)
+	if quantity < 0:
+		print("Error: stock quantity cannot be negative.")
+		continue
+
+	inventory += quantity
 
 	if inventory > 500:
-		print("Alert: inventory exceeds storage capacity!")
+		print("Alert: inventory exceeds storage capacity.")
 		break
-
-print(f"Total Units Processed: {inventory}")
-print(f"Number of Failed/Rejected Entries: {failed_entries}")
-
