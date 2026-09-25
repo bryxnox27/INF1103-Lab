@@ -19,6 +19,7 @@ def calculate_tax(amount):
     return amount * 0.10
 
 def generate_report(total_units, failed_attempts, inventory, history):
+    print("\n--- Inventory Report ---")
     print("Final Inventory Level:", inventory)
     print("Total Deliveries Processed:", total_units)
     print("Number of Failed/Rejected Entries:", failed_attempts)
@@ -81,7 +82,7 @@ def main():
         deliveries_processed += 1
         history.append(delivery)
 
-        print(f"Tax for this delivery: \${tax:.2f}")
+        print(f"Tax for this delivery: ${tax:.2f}")
         print(f"Updated Inventory Level: {inventory}")
 
     generate_report(deliveries_processed, failed_attempts, inventory, history)
