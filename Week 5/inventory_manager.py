@@ -11,7 +11,7 @@ def load_inventory():
         print("inventory.json not found.")
         print("Starting with default inventory.")
         inventory = []
-        
+
     return inventory
 
 def save_inventory(inventory):
@@ -23,7 +23,7 @@ def display_all(inventory):
     print("\nCurrent Inventory")
     print("------------------------------------------------")
     for product in inventory:
-        print(f"ID: {product['id']} | Name: {product['name']} | Price: \${product['price']:.2f} | Stock: {product['stock']}")
+        print(f"ID: {product['id']} | Name: {product['name']} | Price: ${product['price']:.2f} | Stock: {product['stock']}")
     print("------------------------------------------------")
 
 def add_product(inventory):
