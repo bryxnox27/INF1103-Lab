@@ -1,2 +1,4 @@
-Inventory: 110
-History: 10,100
+1001,Mouse,1
+1002,Bagpack,9
+1003,Mouse,8
+1004,Keyboard,1

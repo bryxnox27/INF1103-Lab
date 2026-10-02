@@ -77,7 +77,8 @@ def get_next_item_id(inventory_records):
     return int(inventory_records[-1][0]) + 1
 
 def generate_report(total_units, failed_attempts, total_inventory, history):
-    print("\nFinal Report:")
+    print("\nFinal Report")
+    print("----------------------------")
     print("Final Inventory Level:", total_inventory)
     print("Total Deliveries Processed:", total_units)
     print("Number of Failed/Rejected Entries:", failed_attempts)
@@ -129,8 +130,8 @@ def main():
 
         print("\nNew Order Added:")
         print(f"{new_record[0]}, {new_record[1]}, {new_record[2]}")
-        print(f"Tax for this delivery: ${tax:.2f}")
-        print(f"Updated Inventory Level: {total_inventory}")
+        print(f"Tax: ${tax:.2f}")
+        print(f"SKU Quantity: {new_record[2]} | Updated Inventory Level: {total_inventory}")
 
     generate_report(deliveries_processed, failed_attempts, total_inventory, history)
 
