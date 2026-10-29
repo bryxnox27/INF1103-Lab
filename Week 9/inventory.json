@@ -1,0 +1,26 @@
+[
+    {
+        "type": "physical",
+        "id": "1101",
+        "name": "Mouse",
+        "price": 10.0,
+        "stock": 19,
+        "weight": 0.1
+    },
+    {
+        "type": "physical",
+        "id": "1002",
+        "name": "Keyboard",
+        "price": 200.0,
+        "stock": 1000,
+        "weight": 0.8
+    },
+    {
+        "type": "digital",
+        "id": "2001",
+        "name": "Python Basics eBook",
+        "price": 15.0,
+        "stock": 50,
+        "download_size": 12.5
+    }
+]
