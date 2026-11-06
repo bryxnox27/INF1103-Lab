@@ -48,4 +48,6 @@ classDiagram
     Inventory o-- "0..*" Product : manages
 ```
 
+![Week 9 UML class diagram](class_diagram.png)
+
 `PhysicalProduct` inherits common product behavior and fulfills the `CanBeShipped` interface contract. `DigitalProduct` does not implement shipping. `main.py` handles JSON loading and saving.
