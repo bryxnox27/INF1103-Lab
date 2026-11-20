@@ -1,0 +1,41 @@
+[
+    {
+        "id": "1101",
+        "name": "Mouse",
+        "price": 10.0,
+        "stock": 19,
+        "supplier": {
+            "supplier_id": "SUP-100",
+            "name": "Northstar Supply",
+            "contact_email": "sales@example.com"
+        },
+        "type": "physical",
+        "weight": 0.1
+    },
+    {
+        "id": "1002",
+        "name": "Keyboard",
+        "price": 200.0,
+        "stock": 1000,
+        "supplier": {
+            "supplier_id": "SUP-100",
+            "name": "Northstar Supply",
+            "contact_email": "sales@example.com"
+        },
+        "type": "physical",
+        "weight": 0.8
+    },
+    {
+        "id": "2001",
+        "name": "Python Basics eBook",
+        "price": 15.0,
+        "stock": 50,
+        "supplier": {
+            "supplier_id": "SUP-200",
+            "name": "CodeReads Digital",
+            "contact_email": "help@example.com"
+        },
+        "type": "digital",
+        "download_size": 12.5
+    }
+]
